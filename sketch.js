@@ -12,3 +12,8 @@ function draw() {
   let size = map(vol, 0, 1, 10, 300);
   ellipse(width/2, height/2, size);
 }
+
+function mousePressed(){
+  mic.start();// start microphone
+  userStartAudio();
+}
