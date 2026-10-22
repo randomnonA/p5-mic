@@ -4,7 +4,7 @@ function setup() {
   createCanvas(400,400);
   mic = new p5.AudioIn();
   //mic.start();
-  fft = newp5.FFT();
+  fft = new p5.FFT();
   webcam = createCapture(VIDEO, {flipped:true});
   webcam.size(640, 480);
   webcam.hide();
